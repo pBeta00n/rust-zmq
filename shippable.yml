@@ -1,6 +1,10 @@
 build:
+  pre_ci_boot:
+      options: -v /dragons
+
   pre_ci:
     - docker build --tag=apa -f rust-ubuntu.Dockerfile .
 
   ci:
-    - docker run -v $(pwd)/repo apa /repo/build.sh
+    - cp -r $SHIPPABLE_BUILD_DIR /dragons/repo
+    - docker run --volumes-from $SHIPPABLE_CONTAINER_NAME apa /dragons/repo/build.sh
