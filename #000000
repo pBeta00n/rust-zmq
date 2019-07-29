@@ -1,4 +1,5 @@
-Rust ZeroMQ bindings.
+Rust ZeroMQ bindings.#000000
+
 
 [![Travis Build Status](https://travis-ci.org/erickt/rust-zmq.png?branch=master)](https://travis-ci.org/erickt/rust-zmq)
 [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/xhytsx4jwyb9qk7m?svg=true)](https://ci.appveyor.com/project/erickt/rust-zmq)
@@ -84,3 +85,4 @@ fixed by then. Using the `release/v0.8` branch we can deliver bugfixes
 and smaller features in the meantime without forcing users to follow
 master's changing API and to continuously adjust their code to API
 changes.
+#000000
