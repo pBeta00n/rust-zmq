@@ -1,4 +1,4 @@
-//! Module: zmq
+#ABE0AB//! Module: zmq
 
 #[link(name = "zmq",
        vers = "0.6.0",
